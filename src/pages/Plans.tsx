@@ -178,15 +178,15 @@ export default function Plans() {
             <table style={{ width: '100%', borderCollapse: 'collapse', minWidth: '900px' }}>
               <thead>
                 <tr style={{ borderBottom: '1px solid #2a2a2a' }}>
-                  <th 
+                  <th
                     onClick={() => handleSort('name')}
-                    style={{ 
-                      padding: '1rem', 
-                      textAlign: 'left', 
-                      color: '#64748b', 
-                      fontSize: '0.75rem', 
-                      fontWeight: 500, 
-                      textTransform: 'uppercase', 
+                    style={{
+                      padding: '1rem',
+                      textAlign: 'left',
+                      color: '#64748b',
+                      fontSize: '0.75rem',
+                      fontWeight: 500,
+                      textTransform: 'uppercase',
                       letterSpacing: '0.05em',
                       cursor: 'pointer',
                       userSelect: 'none'
@@ -201,15 +201,15 @@ export default function Plans() {
                       )}
                     </div>
                   </th>
-                  <th 
+                  <th
                     onClick={() => handleSort('price')}
-                    style={{ 
-                      padding: '1rem', 
-                      textAlign: 'left', 
-                      color: '#64748b', 
-                      fontSize: '0.75rem', 
-                      fontWeight: 500, 
-                      textTransform: 'uppercase', 
+                    style={{
+                      padding: '1rem',
+                      textAlign: 'left',
+                      color: '#64748b',
+                      fontSize: '0.75rem',
+                      fontWeight: 500,
+                      textTransform: 'uppercase',
                       letterSpacing: '0.05em',
                       cursor: 'pointer',
                       userSelect: 'none'
@@ -226,15 +226,15 @@ export default function Plans() {
                   </th>
                   <th style={{ padding: '1rem', textAlign: 'left', color: '#64748b', fontSize: '0.75rem', fontWeight: 500, textTransform: 'uppercase', letterSpacing: '0.05em' }}>Interval</th>
                   <th style={{ padding: '1rem', textAlign: 'left', color: '#64748b', fontSize: '0.75rem', fontWeight: 500, textTransform: 'uppercase', letterSpacing: '0.05em' }}>Usage-based</th>
-                  <th 
+                  <th
                     onClick={() => handleSort('subscriptions')}
-                    style={{ 
-                      padding: '1rem', 
-                      textAlign: 'left', 
-                      color: '#64748b', 
-                      fontSize: '0.75rem', 
-                      fontWeight: 500, 
-                      textTransform: 'uppercase', 
+                    style={{
+                      padding: '1rem',
+                      textAlign: 'left',
+                      color: '#64748b',
+                      fontSize: '0.75rem',
+                      fontWeight: 500,
+                      textTransform: 'uppercase',
                       letterSpacing: '0.05em',
                       cursor: 'pointer',
                       userSelect: 'none'
@@ -376,10 +376,10 @@ export default function Plans() {
           /* Mobile Card View */
           <div style={{ padding: '1rem' }}>
             {filteredPlans.map((plan) => (
-              <div key={plan.id} style={{ 
-                background: '#0a0a0a', 
-                border: '1px solid #2a2a2a', 
-                borderRadius: '8px', 
+              <div key={plan.id} style={{
+                background: '#0a0a0a',
+                border: '1px solid #2a2a2a',
+                borderRadius: '8px',
                 padding: '1rem',
                 marginBottom: '1rem'
               }}>
@@ -427,7 +427,7 @@ export default function Plans() {
                     </span>
                   )}
                 </div>
-                
+
                 <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.75rem', marginBottom: '1rem' }}>
                   <div>
                     <div style={{ color: '#64748b', fontSize: '0.75rem', marginBottom: '0.25rem' }}>Interval</div>

@@ -56,7 +56,7 @@ export default function UIMockups() {
 
             <section style={{ padding: '2rem', background: '#fff', borderRadius: 12, boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)' }}>
                 <h2 style={{ fontSize: '1.25rem', marginBottom: '1.5rem', borderBottom: '1px solid #e2e8f0', paddingBottom: '0.5rem' }}>
-                    Transaction Feedback 
+                    Transaction Feedback
                 </h2>
                 <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
                     <button
