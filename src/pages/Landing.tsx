@@ -12,6 +12,9 @@ export default function Landing() {
         <Hero />
         <TechBadges />
 
+        {/* Technology Badges */}
+        <TechBadges />
+
         {/* Sections for anchor links */}
         <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '0 1.5rem' }}>
           <section id="product" style={{ padding: '6rem 0', minHeight: '400px' }}>
