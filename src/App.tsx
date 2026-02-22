@@ -4,6 +4,7 @@ import Dashboard from './pages/Dashboard'
 import Subscriptions from './pages/Subscriptions'
 import Plans from './pages/Plans'
 import UIMockups from './pages/UIMockups'
+import UsageBilling from './pages/UsageBilling'
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path="/" element={<Navigate to="/dashboard" replace />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/subscriptions" element={<Subscriptions />} />
+        <Route path="/subscriptions/:id/usage" element={<UsageBilling />} />
         <Route path="/plans" element={<Plans />} />
         <Route path="/ui-kit" element={<UIMockups />} />
         <Route path="*" element={<Navigate to="/dashboard" replace />} />
