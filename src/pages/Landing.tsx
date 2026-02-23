@@ -1,6 +1,16 @@
-import LandingNavbar from '../components/LandingNavbar'
+import {useState, useEffect}  from "react";
+import LandingNavbar from '../components/LandingNavbar';
+import {RecentActivity} from "../components/recentActivity";
 
 export default function Landing() {
+const [items, setItems] = useState(null);
+  const [showLoading, setShowLoading] = useState(false);
+
+  useEffect(() => {
+    const t = setTimeout(() => setItems(MOCK_ITEMS), 1600);
+    return () => clearTimeout(t);
+  }, []);
+
   return (
     <div style={{ background: '#0a0a0a', minHeight: '100vh' }}>
       <LandingNavbar />
@@ -46,6 +56,7 @@ export default function Landing() {
           <p style={{ color: '#94a3b8' }}>Contact information goes here...</p>
         </section>
       </main>
+   
     </div>
   )
 }

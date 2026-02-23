@@ -220,84 +220,86 @@ export const RecentActivity = ({
   const skeletonCount = 5;
 
   return (
-    <section
-      aria-label={title}
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        gap: "1.5rem",
-        width: "100%",
-      }}
-    >
-      <div
+    <div style={{ maxWidth: "1200px",  background: "#080b12", padding:"2rem" , borderRadius:"1rem", border: "1px solid #0f1626"}}>
+        <section
+        aria-label={title}
         style={{
-          display: "flex",
-          flexDirection: "row",
-          justifyContent: "space-between",
-          alignItems: "center",
-        }}
-      >
-        <h2
-          style={{
-            fontFamily: "Inter, sans-serif",
-            fontWeight: 700,
-            fontSize: "1.25rem",
-            lineHeight: "1.75rem",
-            letterSpacing: "-0.028rem",
-            color: "#FFFFFF",
-            margin: 0,
-          }}
-        >
-          {title}
-        </h2>
-
-        <button
-          onClick={onViewAll}
-          style={{
             display: "flex",
-            alignItems: "center",
-            gap: "0.2rem",
-            background: "none",
-            border: "none",
-            cursor: "pointer",
-            padding: 0,
-            fontFamily: "Inter, sans-serif",
-            fontWeight: 400,
-            fontSize: "0.875rem",
-            lineHeight: "1.25rem",
-            letterSpacing: "-0.009rem",
-            color: "#00D3F3",
-            textDecoration: "none",
-          }}
-          aria-label="View all activity"
-        >
-          View all
-          <ArrowUpRightIcon />
-        </button>
-      </div>
-
-      <ul
-        role="list"
-        aria-busy={isLoading}
-        aria-label="Activity items"
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          gap: "1rem",
-          margin: 0,
-          padding: 0,
-          listStyle: "none",
-          width: "100%",
+            flexDirection: "column",
+            gap: "1.5rem",
+            width: "100%",
         }}
-      >
-        {isLoading
-          ? Array.from({ length: skeletonCount }).map((_, i) => (
-              <SkeletonItem key={i} />
-            ))
-          : visible.map((item) => (
-              <ActivityItem key={item.id} {...item} />
-            ))}
-      </ul>
-    </section>
+        >
+        <div
+            style={{
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "space-between",
+            alignItems: "center",
+            }}
+        >
+            <h2
+            style={{
+                fontFamily: "Inter, sans-serif",
+                fontWeight: 700,
+                fontSize: "1.25rem",
+                lineHeight: "1.75rem",
+                letterSpacing: "-0.028rem",
+                color: "#FFFFFF",
+                margin: 0,
+            }}
+            >
+            {title}
+            </h2>
+
+            <button
+            onClick={onViewAll}
+            style={{
+                display: "flex",
+                alignItems: "center",
+                gap: "0.2rem",
+                background: "none",
+                border: "none",
+                cursor: "pointer",
+                padding: 0,
+                fontFamily: "Inter, sans-serif",
+                fontWeight: 400,
+                fontSize: "0.875rem",
+                lineHeight: "1.25rem",
+                letterSpacing: "-0.009rem",
+                color: "#00D3F3",
+                textDecoration: "none",
+            }}
+            aria-label="View all activity"
+            >
+            View all
+            <ArrowUpRightIcon />
+            </button>
+        </div>
+
+        <ul
+            role="list"
+            aria-busy={isLoading}
+            aria-label="Activity items"
+            style={{
+            display: "flex",
+            flexDirection: "column",
+            gap: "1rem",
+            margin: 0,
+            padding: 0,
+            listStyle: "none",
+            width: "100%",
+            }}
+        >
+            {isLoading
+            ? Array.from({ length: skeletonCount }).map((_, i) => (
+                <SkeletonItem key={i} />
+                ))
+            : visible.map((item) => (
+                <ActivityItem key={item.id} {...item} />
+                ))}
+        </ul>
+        </section>
+    </div>
   );
 };
