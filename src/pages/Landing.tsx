@@ -1,5 +1,6 @@
 import LandingNavbar from '../components/LandingNavbar'
 import Hero from '../components/Landing/Hero'
+import FlowDiagram from '../components/Landing/FlowDiagram'
 
 export default function Landing() {
   return (
@@ -8,6 +9,7 @@ export default function Landing() {
       
       <main>
         <Hero />
+        <FlowDiagram />
 
         {/* Sections for anchor links */}
         <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '0 1.5rem' }}>
