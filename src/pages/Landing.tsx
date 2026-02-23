@@ -1,5 +1,6 @@
-import LandingNavbar from "../components/LandingNavbar";
-import Hero from "../components/Landing/Hero";
+import LandingNavbar from '../components/LandingNavbar'
+import Hero from '../components/Landing/Hero'
+import TechBadges from "../components/landing/TechBadges";
 import SubscriptionActions from "@/components/SubscriptionActions";
 
 export default function Landing() {
@@ -9,6 +10,7 @@ export default function Landing() {
 
       <main>
         <Hero />
+        <TechBadges />
 
         {/* Sections for anchor links */}
         <div
