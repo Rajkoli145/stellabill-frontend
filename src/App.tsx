@@ -7,11 +7,13 @@ import Plans from './pages/Plans'
 import UIMockups from './pages/UIMockups'
 import Landing from './pages/Landing'
 import OnboardingSuccess from './pages/OnboardingSuccess'
+import AboutPrepaidBalances from './components/AboutPrepaidBalances'
 
 function App() {
   return (
     <Routes>
       <Route path="/" element={<Landing />} />
+         <Route path="/about-prepaid-balances" element={<AboutPrepaidBalances />} />
       <Route path="/onboarding-success" element={<OnboardingSuccess />} />
       <Route path="/dashboard" element={<Layout><Dashboard /></Layout>} />
       <Route path="/subscriptions" element={<Layout><Subscriptions /></Layout>} />
